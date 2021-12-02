@@ -115,7 +115,7 @@ for i in range(0,len(fechas)):
         vector="0.3c+p1p+e+n20+a35+gblack"
     )
     
-    #Resto del mapa
+    #Curvas de nivel
         
     fig.grdcontour(
         grid=gebco,
