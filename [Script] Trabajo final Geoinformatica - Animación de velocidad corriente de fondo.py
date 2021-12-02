@@ -2,7 +2,7 @@
 """
 Created on Tue Nov 23 16:39:46 2021
 
-@author: usuario
+@author: Sebastian Principi
 """
 #Libreria para operar con carpetas y archivos
 import os
