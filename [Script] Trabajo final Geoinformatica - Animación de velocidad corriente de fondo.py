@@ -23,7 +23,7 @@ os.chdir(path)
 #Determino la región
 minlon,minlat,maxlon,maxlat=-57, -41.5, -53, -37
 subset_region=[minlon, maxlon, minlat, maxlat]
-rectangle = [[subset_region[0], subset_region[2], subset_region[1], subset_region[3]]]
+
 
 #Cargo la gebco para dibujar posteriormente las curvas de nivel
 gebco = pygmt.datasets.load_earth_relief(resolution="15s", region=subset_region)
@@ -174,6 +174,7 @@ for i in range(0,len(fechas)):
             land="gray27",
             water="skyblue"
         )
+        rectangle = [[subset_region[0], subset_region[2], subset_region[1], subset_region[3]]]
         fig.plot(data=rectangle, style="r+s", pen="2p,red")
     
     #Guardo las figuras
